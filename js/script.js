@@ -278,18 +278,30 @@ let logo = document.querySelector(".intro-heading");
 let logoImage = document.querySelector(".intro img");
 let logoSpan = document.querySelectorAll(".intro-heading span");
 
-window,
-  addEventListener("DOMContentLoaded", () => {
-    logoImage.classList.add("active");
-    setTimeout(() => {
-      logoSpan.forEach((span, index) => {
-        setTimeout(() => {
-          span.classList.add("active");
-        }, (index + 1) * 100);
-      });
-
+window.addEventListener("DOMContentLoaded", () => {
+  logoImage.classList.add("active");
+  setTimeout(() => {
+    logoSpan.forEach((span, index) => {
       setTimeout(() => {
-        intro.style.top = "-100vh";
-      }, 2300);
+        span.classList.add("active");
+      }, (index + 1) * 100);
     });
+
+    setTimeout(() => {
+      intro.style.top = "-100vh";
+    }, 2300);
   });
+});
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("show");
+    } else {
+      entry.target.classList.remove("show");
+    }
+  });
+});
+
+const hiddenElements = document.querySelectorAll(".scroll-animation");
+hiddenElements.forEach((item) => observer.observe(item));

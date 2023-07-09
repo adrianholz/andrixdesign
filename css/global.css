@@ -148,3 +148,35 @@ p {
   margin: 0;
   padding: 0;
 }
+
+.scroll-animation {
+  opacity: 0;
+}
+
+.leftside {
+  transform: translateX(-40px);
+}
+
+.rightside {
+  transform: translateX(40px);
+}
+
+.upside {
+  transform: translateY(-40px);
+}
+
+.downside {
+  transform: translateY(40px);
+}
+
+.show {
+  opacity: 1;
+  transition: 0.5s;
+  transform: translateX(0px);
+}
+
+@media (prefers-reduced-motion) {
+  .hidden {
+    transition: none;
+  }
+}
