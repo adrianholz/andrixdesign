@@ -161,6 +161,7 @@
   font-size: 1.125em;
   text-transform: uppercase;
   font-weight: 700;
+  display: inline-block;
 }
 
 .service-steps ul {
@@ -426,7 +427,7 @@
   align-items: center;
   box-shadow: 0 48px 100px rgba(17, 12, 46, 0.1);
   max-width: 720px;
-  transition: 0.3s ease;
+  transition: 0.3s ease, 0.5;
 }
 
 .preview-image {

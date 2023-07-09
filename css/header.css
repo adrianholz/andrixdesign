@@ -113,7 +113,8 @@ header {
 
 .call {
   background: var(--b1);
-  transition: 0.2s ease;
+  transition-property: background, color, transform, opacity;
+  transition-duration: 0.2s, 0.2s, 0.5s, 0.5s;
 }
 
 .call:hover {

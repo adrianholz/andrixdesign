@@ -54,7 +54,8 @@ footer .blur {
 .footer-contact a {
   text-decoration: none;
   color: #cecece;
-  transition: 0.2s ease;
+  transition-property: color, transform;
+  transition-duration: 0.2s, 0.5s;
 }
 
 .footer-contact address {

@@ -303,5 +303,15 @@ const observer = new IntersectionObserver((entries) => {
   });
 });
 
-const hiddenElements = document.querySelectorAll(".scroll-animation");
-hiddenElements.forEach((item) => observer.observe(item));
+const observeOnce = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("show");
+    }
+  });
+});
+
+const showElements = document.querySelectorAll(".scroll-animation");
+const showElementsOnce = document.querySelectorAll(".scroll-animation-once");
+showElements.forEach((item) => observer.observe(item));
+showElementsOnce.forEach((item) => observeOnce.observe(item));

@@ -149,7 +149,8 @@ p {
   padding: 0;
 }
 
-.scroll-animation {
+.scroll-animation,
+.scroll-animation-once {
   opacity: 0;
 }
 

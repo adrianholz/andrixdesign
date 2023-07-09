@@ -176,16 +176,6 @@
   cursor: default;
 }
 
-.color-boxes div,
-.technologies-icons .section-icon {
-  transition: 0.2s ease;
-}
-
-.color-boxes div:hover,
-.technologies-icons .section-icon:hover {
-  transform: translateY(-5px);
-}
-
 .technologies-icons {
   display: flex;
   gap: 20px;
@@ -210,7 +200,8 @@
   font-family: "Poppins", sans-serif;
   border-radius: 20px;
   font-weight: 500;
-  transition: 0.2s ease;
+  transition-property: background, color, transform, opacity;
+  transition-duration: 0.2s, 0.2s, 0.5s, 0.5s;
   min-width: fit-content;
 }
 

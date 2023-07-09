@@ -64,7 +64,8 @@
   color: rgba(255, 255, 255, 0.6);
   font-family: "Poppins", sans-serif;
   font-weight: 500;
-  transition: 0.2s ease;
+  transition-property: box-shadow, transform, opacity;
+  transition-duration: 0.2s, 0.5s, 0.5s;
   max-width: fit-content;
 }
 

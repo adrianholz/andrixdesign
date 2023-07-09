@@ -111,7 +111,8 @@
   font-weight: 600;
   box-sizing: border-box;
   cursor: pointer;
-  transition: 0.3s ease;
+  transition-property: box-shadow, color, background, transform, opacity;
+  transition-duration: 0.3s, 0.3s, 0.3s, 0.5s, 0.5s;
   position: relative;
 }
 
@@ -136,10 +137,11 @@
   padding: 18px 36px;
   font-family: "Poppins", sans-serif;
   border-radius: 20px;
-  transition: 0.2s ease;
   max-width: fit-content;
   margin: 20px 0 0 auto;
   cursor: pointer;
+  transition-property: background, color, transform, opacity;
+  transition-duration: 0.2s, 0.2s, 0.5s, 0.5s;
 }
 
 .contact-form .button:hover {
@@ -194,6 +196,9 @@
   .contact-heading h1 {
     font-size: 2em;
     top: -50px;
+  }
+  .contact-form .button {
+    margin: 20px auto 0 auto;
   }
 }
 
