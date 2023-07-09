@@ -1,0 +1,32 @@
+@import url("global.css");
+@import url("swiper-bundle.min.css");
+@import url("intro.css");
+@import url("header.css");
+@import url("main.css");
+@import url("slide.css");
+@import url("services.css");
+@import url("team.css");
+@import url("projects.css");
+@import url("courses.css");
+@import url("contact.css");
+@import url("footer.css");
+
+:root {
+  --w1: #fff;
+  --b1: #232323;
+  --b2: #161616;
+  --d1: #0056ff;
+  --d2: #b415ff;
+}
+
+@property --bl1 {
+  syntax: "<color>";
+  initial-value: #232323;
+  inherits: false;
+}
+
+@property --bl2 {
+  syntax: "<color>";
+  initial-value: #161616;
+  inherits: false;
+}
