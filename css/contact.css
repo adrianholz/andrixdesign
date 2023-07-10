@@ -192,6 +192,15 @@
   }
 }
 
+@media (max-width: 740px) {
+  .contact-form input[type="text"],
+  .contact-form input[type="tel"],
+  .contact-form input[type="email"],
+  .contact-form textarea {
+    font-size: 1rem;
+  }
+}
+
 @media (max-width: 625px) {
   .contact-heading h1 {
     font-size: 2em;

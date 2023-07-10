@@ -177,7 +177,7 @@ p {
 }
 
 @media (prefers-reduced-motion) {
-  .hidden {
+  .show {
     transition: none;
   }
 }

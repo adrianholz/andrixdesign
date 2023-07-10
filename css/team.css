@@ -170,6 +170,10 @@
   opacity: 1;
 }
 
+.swiper-container-1 .swiper-pagination {
+  display: none;
+}
+
 @media (max-width: 1240px) {
   .player-info h3 {
     font-size: 3em;
@@ -257,6 +261,20 @@
   }
   .player-education h4 span {
     font-size: 1.25rem;
+  }
+  .swiper-container-1 .swiper-pagination {
+    display: unset;
+  }
+
+  .swiper-container-1 .swiper-pagination-bullet {
+    background: var(--w1);
+  }
+  .swiper-container-1 .swiper-pagination-bullet-active {
+    background: var(--w1);
+  }
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none;
   }
 }
 

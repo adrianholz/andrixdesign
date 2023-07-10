@@ -130,6 +130,15 @@
   }
 }
 
+@media (max-width: 740px) {
+  .courses-inner p {
+    font-size: 1rem;
+  }
+  .courses-section h3 {
+    font-size: 1.75rem;
+  }
+}
+
 @keyframes float {
   0% {
     transform: translateY(0) rotate(5deg);

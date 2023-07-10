@@ -729,6 +729,7 @@
   }
   .service-window-inner p {
     max-width: 310px;
+    font-size: 1rem;
   }
   .service-title div {
     display: none;
@@ -749,6 +750,10 @@
   }
   .all-services .service-description {
     padding-bottom: 0 !important;
+    font-size: 1rem;
+  }
+  .interfaces-types .service-description {
+    font-size: 1rem;
   }
   .interface-preview {
     flex-direction: column;
@@ -780,6 +785,12 @@
   .services {
     background-size: cover, 700px;
     background-position: top, bottom -80px right -160px;
+  }
+  .service-steps ul li {
+    font-size: 1rem;
+  }
+  .section-title h3 {
+    font-size: 1.75rem;
   }
 }
 
