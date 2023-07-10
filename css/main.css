@@ -114,7 +114,7 @@ main {
 
 .main-inner p {
   font-weight: 400;
-  font-size: 1.5em;
+  font-size: 1.75rem;
   overflow: hidden;
 }
 
@@ -125,7 +125,7 @@ main {
 
 .main-inner h1 {
   font-weight: 900;
-  font-size: 6.25em;
+  font-size: 7rem;
   line-height: 1em;
   position: relative;
   overflow: hidden;
@@ -294,7 +294,7 @@ main {
     max-width: 620px;
   }
   .blog-post h2 {
-    font-size: 1em;
+    font-size: 1rem;
   }
   .post-preview p {
     font-size: 1rem;
@@ -306,13 +306,13 @@ main {
     max-width: 100%;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 15px 40px;
+    gap: 15px 30px;
   }
   .post-meta {
     flex-direction: row;
   }
   .post-call a {
-    font-size: 1em;
+    font-size: 1rem;
     padding: 14px 26px;
     border-radius: 14px;
   }
@@ -339,13 +339,13 @@ main {
   }
   .main-inner h1 {
     font-weight: 900;
-    font-size: 4em;
+    font-size: 4rem;
     line-height: 1em;
     position: relative;
     overflow: hidden;
   }
   .main-inner p {
-    font-size: 1.125em;
+    font-size: 1.125rem;
   }
 }
 
@@ -373,7 +373,7 @@ main {
     object-fit: cover;
   }
   .post-call {
-    gap: 15px 20px;
+    gap: 15px;
   }
 }
 
@@ -384,13 +384,13 @@ main {
   }
   .main-inner h1 {
     font-weight: 900;
-    font-size: 3em;
+    font-size: 3rem;
     line-height: 1em;
     position: relative;
     overflow: hidden;
   }
   .main-inner p {
-    font-size: 1em;
+    font-size: 1rem;
   }
   .icons-above a:nth-child(2) {
     margin-bottom: 30px;
@@ -417,7 +417,7 @@ main {
   }
   .main-inner h1 {
     font-weight: 900;
-    font-size: 2.5em;
+    font-size: 2.5rem;
     line-height: 1em;
     position: relative;
     overflow: hidden;
@@ -427,7 +427,7 @@ main {
     max-width: 30px;
   }
   .main-inner p {
-    font-size: 0.75em;
+    font-size: 0.875rem;
   }
   .heading-separator.active {
     height: 2px;

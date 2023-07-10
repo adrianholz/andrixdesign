@@ -91,13 +91,8 @@
 }
 
 .project-start button {
-  font-family: "Raleway", sans-serif;
-  font-weight: 600;
   background: none;
   border: none;
-  color: var(--w1);
-  font-size: 3.5em;
-  text-transform: uppercase;
   padding: 0;
   cursor: pointer;
 }
@@ -128,7 +123,7 @@
 }
 
 .project-title h3 {
-  font-size: 48px;
+  font-size: 3rem;
   margin-bottom: 20px;
 }
 
@@ -141,7 +136,7 @@
 .project-typography > span,
 .project-colors > span,
 .project-technologies span {
-  font-size: 24px;
+  font-size: 1.5rem;
   text-transform: uppercase;
   font-weight: 800;
   display: block;

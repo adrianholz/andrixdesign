@@ -33,7 +33,7 @@
 
 .player-info h3 {
   color: rgba(255, 255, 255, 0.6);
-  font-size: 4em;
+  font-size: 4.5rem;
   text-transform: uppercase;
   font-weight: 800;
   background: linear-gradient(
@@ -70,7 +70,7 @@
 
 .player-info h3 span {
   display: block;
-  font-size: 0.625em;
+  font-size: 3rem;
   text-transform: uppercase;
   font-weight: 200;
   margin-top: -10px;
@@ -94,7 +94,7 @@
 }
 
 .player-education h4 {
-  font-size: 20px;
+  font-size: 1.25rem;
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.5);
   font-weight: 200;
@@ -102,7 +102,7 @@
 }
 
 .player-education h4 span {
-  font-size: 32px;
+  font-size: 2rem;
   display: block;
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.5);
@@ -177,15 +177,16 @@
   }
   .player-info h3 span {
     margin-top: -5px;
+    font-size: 2.25rem;
   }
   .player-education {
     max-width: 420px;
   }
   .player-education h4 {
-    font-size: 16px;
+    font-size: 1rem;
   }
   .player-education h4 span {
-    font-size: 24px;
+    font-size: 1.5rem;
   }
   .team-player img {
     max-width: 440px;
@@ -245,16 +246,17 @@
     margin: 70px 40px 0 40px;
   }
   .player-info h3 {
-    font-size: 2em;
+    font-size: 2.25rem;
   }
   .player-info h3 span {
     margin-top: unset;
+    font-size: 1.5rem;
   }
   .player-education {
     max-width: 320px;
   }
   .player-education h4 span {
-    font-size: 20px;
+    font-size: 1.25rem;
   }
 }
 

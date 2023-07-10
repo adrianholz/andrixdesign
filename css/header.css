@@ -202,13 +202,13 @@ header {
     display: none;
     content: "MENU";
     color: var(--w1);
-    font-size: 5em;
+    font-size: 5rem;
     font-weight: 800;
     position: absolute;
     width: unset;
     height: unset;
-    top: -65px;
-    left: -23px;
+    top: -75px;
+    left: -7px;
     border-radius: unset;
     display: unset;
     background: unset;

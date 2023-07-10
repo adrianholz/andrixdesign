@@ -129,11 +129,11 @@
   color: var(--w1);
   font-weight: 800;
   text-transform: uppercase;
-  font-size: 3em;
+  font-size: 3rem;
 }
 
 .service-title h2 span {
-  font-size: 1.25em;
+  font-size: 4rem;
 }
 
 .service-window-inner p {
@@ -158,7 +158,7 @@
 
 .service-steps span {
   color: var(--w1);
-  font-size: 1.125em;
+  font-size: 1.25rem;
   text-transform: uppercase;
   font-weight: 700;
   display: inline-block;
@@ -374,7 +374,7 @@
 }
 
 .interface-boxes p {
-  font-size: 1.25em;
+  font-size: 1.5rem;
   font-weight: 600;
   display: block;
   padding: 20px;
@@ -447,13 +447,13 @@
 }
 
 .interface-preview-content span:nth-child(1) {
-  font-size: 1.75em;
+  font-size: 2rem;
   font-weight: 600;
   color: var(--b2);
 }
 
 .interface-preview-content span:nth-child(2) {
-  font-size: 1.25em;
+  font-size: 1.5rem;
   font-weight: 500;
   color: #aaa;
 }
@@ -468,7 +468,7 @@
 }
 
 .interface-preview-content p {
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.75em;
   max-width: 300px;
   padding: 0 0 20px 0;
@@ -603,7 +603,7 @@
 
 @media (max-width: 1120px) {
   .service-window-inner h2 span {
-    font-size: 1em;
+    font-size: 3.5rem;
   }
   .interfaces {
     gap: 40px;
@@ -735,7 +735,10 @@
   }
   .service-title h2 {
     text-align: center;
-    font-size: 2em;
+    font-size: 2.25rem;
+  }
+  .service-title h2 span {
+    font-size: 2.25rem;
   }
   .section-title {
     flex-direction: column;
