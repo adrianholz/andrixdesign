@@ -8,7 +8,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  z-index: 5;
+  z-index: 15;
   background: linear-gradient(to bottom right, var(--b1), var(--b2));
   transition: 1s;
 }

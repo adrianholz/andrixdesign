@@ -12,7 +12,7 @@ header {
   justify-content: space-between;
   align-items: center;
   position: relative;
-  z-index: 2;
+  z-index: 10;
 }
 
 .header-inner img {
@@ -51,21 +51,6 @@ header {
 .logo:hover {
   opacity: 0.7;
 }
-
-/* .header-inner ul::before,
-.call::before {
-  content: "";
-  position: absolute;
-  width: calc(100% + 2px);
-  height: calc(100% + 2px);
-  top: -1px;
-  left: -1px;
-  border-radius: 20px;
-  display: block;
-  background: radial-gradient(var(--w1), rgba(0, 0, 0, 0.1));
-  z-index: -1;
-  transition: 0.3s ease;
-} */
 
 .header-inner ul::before {
   transition: none;
@@ -134,7 +119,6 @@ header {
   width: 100%;
   background: rgba(0, 0, 0, 0.5);
   position: fixed;
-  z-index: 2;
   top: 0;
   left: 0;
   opacity: 0;

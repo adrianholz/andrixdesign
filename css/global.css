@@ -170,14 +170,14 @@ p {
   transform: translateY(40px);
 }
 
-.show {
+.show-element {
   opacity: 1;
   transition: 0.5s;
   transform: translateX(0px);
 }
 
 @media (prefers-reduced-motion) {
-  .show {
+  .show-element {
     transition: none;
   }
 }
