@@ -22,7 +22,7 @@ header {
   margin: 0 auto;
 }
 
-.header-inner ul,
+.header-inner nav > ul,
 .call {
   list-style-type: none;
   display: flex;
@@ -65,19 +65,23 @@ header {
   position: relative;
 }
 
-.header-inner ul li:nth-child(2) {
+.header-inner ul li {
+  position: relative;
+}
+
+.header-inner > ul li:nth-child(2) {
   transition-delay: 0.05s;
 }
 
-.header-inner ul li:nth-child(3) {
+.header-inner > ul li:nth-child(3) {
   transition-delay: 0.1s;
 }
 
-.header-inner ul li:nth-child(4) {
+.header-inner > ul li:nth-child(4) {
   transition-delay: 0.15s;
 }
 
-.header-inner ul li:nth-child(5) {
+.header-inner > ul li:nth-child(5) {
   transition-delay: 0.2s;
 }
 
@@ -133,6 +137,29 @@ header {
     0px 4px 10px rgba(0, 0, 0, 0.25);
 }
 
+.submenu {
+  position: absolute;
+  list-style-type: none;
+  width: fit-content;
+  white-space: nowrap;
+  background: var(--b1);
+  border-radius: 0 0 20px 20px;
+  padding: 30px;
+  left: -30px;
+  top: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.2s ease;
+}
+
+.header-inner nav ul li:hover .submenu {
+  visibility: visible;
+  opacity: 1;
+}
+
 @media (max-width: 1020px) {
   .header-inner img {
     margin: unset;
@@ -161,20 +188,11 @@ header {
     height: 100%;
     transition: right 0.3s ease;
     z-index: 10;
-    background: var(--b2) url(../img/svg/Andrix.svg) no-repeat;
+    background: var(--b2) url(../img/svg/Andrix-menu.svg) no-repeat;
     background-size: 480px;
     background-position: bottom -55px right -145px;
   }
-  nav::before {
-    content: "";
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    background-color: #161616f3;
-  }
-  .header-inner ul {
+  .header-inner nav > ul {
     flex-direction: column;
     padding: 30px;
     gap: 30px;
@@ -182,17 +200,17 @@ header {
       0px 4px 10px rgba(0, 0, 0, 0.25);
     background: linear-gradient(to bottom right, var(--b1), var(--b2));
   }
-  .header-inner ul::before {
+  .header-inner nav > ul::before {
     display: none;
     content: "MENU";
-    color: var(--w1);
+    color: #ffffff0d;
     font-size: 5rem;
     font-weight: 800;
     position: absolute;
     width: unset;
     height: unset;
     top: -75px;
-    left: -7px;
+    left: -13px;
     border-radius: unset;
     display: unset;
     background: unset;
@@ -201,6 +219,7 @@ header {
   }
   nav.show {
     right: 0;
+    overflow-y: auto;
   }
   .overlay.show {
     opacity: 1;
@@ -220,5 +239,28 @@ header {
   .call-mobile:hover {
     --bl1: #0056ff;
     --bl2: #0047d6;
+  }
+  .submenu {
+    position: unset;
+    visibility: visible;
+    opacity: 1;
+    background: none;
+    padding: 20px 0 0 0;
+    white-space: unset;
+    max-width: 120px;
+    display: none;
+  }
+  .submenu.active {
+    display: flex;
+  }
+  .submenu li a {
+    color: #cecece !important;
+    transition: 0.2s ease;
+  }
+  .submenu li a::after {
+    display: none !important;
+  }
+  .submenu li a:hover {
+    color: var(--w1) !important;
   }
 }

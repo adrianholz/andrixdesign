@@ -176,6 +176,21 @@ p {
   transform: translateX(0px);
 }
 
+.tooltip {
+  position: absolute;
+  font-family: "Roboto Mono", monospace;
+  z-index: 20;
+  color: var(--w1);
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+  padding: 12px;
+  background: var(--b1);
+  border-radius: 10px;
+  font-weight: 500;
+  max-width: fit-content;
+  line-height: 1.25rem;
+  width: 100%;
+}
+
 @media (prefers-reduced-motion) {
   .show-element {
     transition: none;

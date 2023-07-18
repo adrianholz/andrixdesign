@@ -1,5 +1,7 @@
 @import url("global.css");
-@import url("swiper-bundle.min.css");
+@import url("swiper/swiper.min.css");
+@import url("swiper/navigation.min.css");
+@import url("swiper/pagination.min.css");
 @import url("intro.css");
 @import url("header.css");
 @import url("main.css");

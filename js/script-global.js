@@ -15,6 +15,19 @@ function toggleMobileMenu() {
   });
 }
 
+//Activating mobile submenus.
+function mobileSubmenu() {
+  const submenuContainers = document.querySelectorAll(
+    ".header-services, .header-about",
+  );
+  const submenu = document.querySelectorAll(".submenu");
+  submenuContainers.forEach((item, index) => {
+    item.addEventListener("click", () => {
+      submenu[index].classList.toggle("active");
+    });
+  });
+}
+
 //Background and color alteration for labels as inputs are checked.
 function alterFormCheckboxes() {
   const contactLabels = document.querySelectorAll(".checkbox-group label");
@@ -59,6 +72,53 @@ function animateElements() {
   showElementsOnce.forEach((item) => observeOnce.observe(item));
 }
 
+//Tooltip for additional information on hover.
+function tooltip() {
+  const element = document.querySelectorAll("[data-value]");
+
+  element.forEach((item) => {
+    item.addEventListener("mouseenter", handleEnter);
+    item.addEventListener("mouseleave", handleLeave);
+  });
+
+  function handleEnter() {
+    const windowSize = window.innerWidth * 0.5;
+    const box = createTooltip(this);
+    document.body.appendChild(box);
+    this.addEventListener("mousemove", (event) => {
+      if (window.matchMedia("(min-width:1040px)").matches) {
+        box.style.top = event.pageY + 15 + "px";
+        box.style.left = event.pageX + 15 + "px";
+      } else if (event.clientX < windowSize) {
+        box.style.top = event.pageY + 15 + "px";
+        box.style.left = event.pageX + 15 + "px";
+      } else {
+        box.style.top = event.pageY + 18 + "px";
+        box.style.left = event.pageX - 105 + "px";
+      }
+    });
+  }
+
+  function handleLeave() {
+    document.body.removeChild(document.querySelector(".tooltip"));
+    this.removeEventListener("mousemove", handleEnter);
+  }
+
+  function createTooltip(item) {
+    const box = document.createElement("div");
+    const text = document.createElement("p");
+    text.innerHTML = item.dataset.value;
+    if (item.dataset.color) {
+      box.style.background = item.dataset.color;
+    }
+    box.classList.add("tooltip");
+    box.appendChild(text);
+    return box;
+  }
+}
+
 toggleMobileMenu();
+mobileSubmenu();
 alterFormCheckboxes();
 animateElements();
+tooltip();
