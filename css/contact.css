@@ -8,12 +8,16 @@
 .contact-heading {
   position: relative;
   z-index: 2;
+  color: var(--w1);
+  text-align: center;
 }
 
 .contact-heading div {
   max-width: 1100px;
   margin: 0 auto;
   border-radius: 20px 20px 0 0;
+  padding: 50px 20px;
+  background: var(--b2);
 }
 
 .contact-heading h1 {
@@ -28,10 +32,25 @@
   right: 0;
   left: 0;
   margin: 0 auto;
+  max-width: fit-content;
+  padding: 20px 40px;
+  border-radius: 20px 20px 0 0;
+  text-transform: uppercase;
 }
 
 .contact-heading h2 {
   max-width: 600px;
+  font-size: 3rem;
+  font-weight: 200;
+  text-transform: uppercase;
+  margin: 0 auto;
+}
+
+.contact-heading h2 span {
+  font-size: 4rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin: 0 auto;
 }
 
 .contact-form {
@@ -167,11 +186,16 @@
     font-size: 4em;
     top: -80px;
   }
+  .contact-heading h2 {
+    font-size: 2rem;
+    max-width: 440px;
+    padding: 0 20px;
+  }
+  .contact-heading h2 span {
+    font-size: 2.75rem;
+  }
   .contact-inner {
     padding: 30px;
-  }
-  .contact-heading h2 {
-    max-width: 440px;
   }
 }
 
@@ -215,6 +239,16 @@
   .contact-info {
     display: flex;
     flex-direction: column;
+  }
+}
+
+@media (max-width: 515px) {
+  .contact-heading h2 {
+    font-size: 1.75rem;
+    line-height: 2.25rem;
+  }
+  .contact-heading h2 span {
+    font-size: 2rem;
   }
 }
 

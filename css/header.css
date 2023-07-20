@@ -69,19 +69,19 @@ header {
   position: relative;
 }
 
-.header-inner > ul li:nth-child(2) {
+.header-inner nav > ul > li:nth-child(2) {
   transition-delay: 0.05s;
 }
 
-.header-inner > ul li:nth-child(3) {
+.header-inner nav > ul > li:nth-child(3) {
   transition-delay: 0.1s;
 }
 
-.header-inner > ul li:nth-child(4) {
+.header-inner nav > ul > li:nth-child(4) {
   transition-delay: 0.15s;
 }
 
-.header-inner > ul li:nth-child(5) {
+.header-inner nav > ul > li:nth-child(5) {
   transition-delay: 0.2s;
 }
 
