@@ -77,6 +77,9 @@ main,
 .service-description {
   background: var(--b2);
   padding: 40px 20px;
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
 }
 
 .description-inner {
@@ -87,15 +90,30 @@ main,
   gap: 40px;
 }
 
+.service-description .blur {
+  height: 200px;
+  opacity: 0.8;
+  transition: none;
+}
+
 .description-inner div {
-  color: var(--w1);
-  background: linear-gradient(to bottom right, var(--b1), var(--b2));
-  border: 1px solid rgba(255, 255, 255, 0.25);
+  color: #cecece;
   border-radius: 20px;
   padding: 40px;
   max-width: 100%;
   font-size: 1.125rem;
   line-height: 2rem;
+  background: linear-gradient(
+    to bottom right,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0)
+  );
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(5px);
+}
+
+.description-inner strong {
+  color: var(--w1);
 }
 
 .description-inner div:nth-child(1),
@@ -107,7 +125,7 @@ main,
   grid-column: span 4;
 }
 
-.description-inner div:nth-child(4) {
+.service-technologies {
   grid-column: span 2;
 }
 
@@ -284,6 +302,14 @@ main,
   background-color: var(--b2);
   background-repeat: no-repeat;
   color: var(--w1);
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+}
+
+.faq-background .blur {
+  opacity: 0.6;
+  height: 400px;
 }
 
 .faq-inner {
@@ -309,10 +335,10 @@ main,
   text-align: left;
   transition: all 0.2s ease;
   border-radius: 8px;
-  line-height: 1.25rem;
+  line-height: 1.75rem;
   display: flex;
   align-items: center;
-  gap: 5px;
+  gap: 10px;
 }
 
 .faq button:hover {
@@ -350,6 +376,46 @@ main,
   }
 }
 
+@media (max-width: 1180px) {
+  .service-image {
+    max-width: 1000px;
+  }
+  .intro-wrapper {
+    height: 500px;
+  }
+  .service-title {
+    padding-top: 140px;
+  }
+  .intro-wrapper .blur {
+    height: 150px;
+  }
+  .description-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 780px;
+    margin: 0 auto;
+  }
+  .service-technologies {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 520px !important;
+  }
+  .service-technologies img {
+    max-width: 100px;
+  }
+  .service-description .blur {
+    bottom: unset;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 400px;
+    opacity: 0.6;
+  }
+}
+
 @media (max-width: 1040px) {
   .projects-heading h1 {
     font-size: 1rem;
@@ -365,6 +431,73 @@ main,
   }
 }
 
+@media (max-width: 1020px) {
+  .service-image {
+    max-width: 700px;
+  }
+  .intro-wrapper {
+    height: 400px;
+  }
+  .intro-wrapper .blur {
+    height: 100px;
+    filter: blur(100px);
+  }
+}
+
+@media (max-width: 740px) {
+  .service-intro,
+  .service-image {
+    display: none;
+  }
+  .service-title {
+    flex-direction: column;
+    max-width: fit-content;
+    margin: 0 auto;
+    padding-top: 80px;
+  }
+  .service-title img {
+    display: none;
+  }
+  .service-title h1 {
+    border-radius: 20px 20px 0 0;
+    background: var(--b2) url("../img/svg/website-dark-2.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 160px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 660px) {
+  .service-technologies {
+    justify-content: start;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 100% !important;
+    background: none !important;
+    border: none !important;
+    overflow-x: auto;
+    padding: 0 0 20px 0 !important;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+  }
+  .service-technologies::-webkit-scrollbar {
+    height: 8px;
+  }
+
+  .service-technologies::-webkit-scrollbar-track {
+    background: var(--b1);
+  }
+  .service-technologies::-webkit-scrollbar-thumb {
+    background: #3d3d3d;
+    border-radius: 15px;
+  }
+
+  .service-technologies::-webkit-scrollbar-thumb:hover {
+    background: var(--w1);
+  }
+}
+
 @media (max-width: 515px) {
   .projects-heading h2 {
     font-size: 1.75rem;
@@ -375,5 +508,12 @@ main,
   }
   .projects-heading div {
     padding: 40px 20px;
+  }
+  .service-title h1 {
+    font-size: 2.25rem;
+    background-size: 120px;
+  }
+  .service-title h1 span {
+    font-size: 2.5rem;
   }
 }
