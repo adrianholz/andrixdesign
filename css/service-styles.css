@@ -281,7 +281,8 @@ main,
 }
 
 .faq-background {
-  background: var(--b2);
+  background-color: var(--b2);
+  background-repeat: no-repeat;
   color: var(--w1);
 }
 
