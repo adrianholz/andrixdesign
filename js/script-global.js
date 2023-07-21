@@ -117,8 +117,21 @@ function tooltip() {
   }
 }
 
+//Activating frequently asked questions.
+function faq() {
+  const faqButtons = document.querySelectorAll(".faq-inner button");
+  const faqContent = document.querySelectorAll(".faq-inner dd");
+  faqButtons.forEach((item, index) => {
+    item.addEventListener("click", () => {
+      item.classList.toggle("active");
+      faqContent[index].classList.toggle("active");
+    });
+  });
+}
+
 toggleMobileMenu();
 mobileSubmenu();
 alterFormCheckboxes();
 animateElements();
 tooltip();
+faq();
