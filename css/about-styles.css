@@ -1,0 +1,435 @@
+main {
+  background: var(--b2);
+  position: relative;
+  z-index: 2;
+}
+
+main .blur {
+  max-width: 840px;
+  left: 0;
+  right: 0;
+  bottom: 20%;
+  margin: 0 auto;
+}
+
+.about-inner {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding-top: 60px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.player-decoration {
+  text-transform: uppercase;
+  position: absolute;
+  text-align: center;
+  left: 0;
+  right: 0;
+  top: 8%;
+  margin: 0 auto;
+  font-size: 15em;
+  font-weight: 900;
+  font-style: italic;
+  z-index: -1;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.05),
+    rgba(255, 255, 255, 0.01)
+  );
+  background-size: 100%;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+
+.player-intro h1 {
+  font-size: 6.5rem;
+  font-weight: 900;
+  color: var(--w1);
+  text-transform: uppercase;
+  line-height: 5.5rem;
+}
+
+.player-intro h1 span {
+  font-size: 5rem;
+  font-weight: 300;
+}
+
+.player-intro h2 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  color: var(--w1);
+  margin-top: 8px;
+  font-weight: 800;
+}
+
+.player-calls {
+  display: flex;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.player-calls a {
+  border-radius: 20px;
+  background: linear-gradient(
+    to bottom right,
+    rgba(35, 35, 35, 0.5),
+    rgba(22, 22, 22, 0.25)
+  );
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 18px 36px;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.6);
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  transition-property: box-shadow, transform, opacity;
+  transition-duration: 0.2s, 0.5s, 0.5s;
+  max-width: fit-content;
+}
+
+.player-calls a:hover {
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 3px 20px, rgba(0, 0, 0, 0.23) 0px 0px 6px;
+}
+
+.player-description {
+  background: url(../img/webp/bg-paper.webp) center top / cover no-repeat;
+  padding: 120px 20px 180px 20px;
+  margin-bottom: -60px;
+}
+
+.description-inner {
+  max-width: 1140px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.player-summary {
+  max-width: 700px;
+}
+
+.player-summary h1,
+.player-education h1 {
+  font-size: 1.125rem;
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+  margin: 0 auto;
+  max-width: fit-content;
+  padding: 20px 40px;
+  border-radius: 20px 20px 0 0;
+  font-weight: 700;
+  color: var(--b1);
+  background: linear-gradient(
+    rgba(206, 206, 206, 0.8),
+    rgba(206, 206, 206, 0.3)
+  );
+  box-shadow: 0px 18px 50px -10px rgba(0, 0, 0, 0.2);
+}
+
+.summary-info,
+.info-inner {
+  box-sizing: border-box;
+  padding: 40px;
+}
+
+.summary-info {
+  background: linear-gradient(
+    180deg,
+    rgba(206, 206, 206, 0.5) 0%,
+    rgba(206, 206, 206, 0) 100%
+  );
+  border-radius: 20px 0 0 20px;
+  box-shadow: 0px 1px 0px rgba(17, 17, 26, 0.1),
+    0px 8px 24px rgba(17, 17, 26, 0.1), 0px 16px 48px rgba(17, 17, 26, 0.1);
+  height: 100%;
+  max-height: 663px;
+}
+
+.player-info {
+  max-width: 460px;
+  width: 100%;
+}
+
+.player-quote {
+  display: flex;
+  box-shadow: 0px 20px 25px rgba(0, 0, 0, 0.1),
+    0px 10px 10px rgba(0, 0, 0, 0.04);
+  border-radius: 20px;
+}
+
+.player-quote img {
+  min-width: 230px;
+  border-radius: 20px 0 0 20px;
+}
+
+.player-quote div {
+  background: linear-gradient(
+    180deg,
+    rgba(206, 206, 206, 0.5) 0%,
+    rgba(206, 206, 206, 0) 100%
+  );
+  border-radius: 0 20px 20px 0;
+}
+
+.player-quote div span {
+  color: var(--b2);
+  font-weight: 700;
+  font-size: 1.125rem;
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 15px 20px;
+  border-radius: 0 20px 0 0;
+  box-shadow: 0px 6px 12px -2px rgba(0, 0, 0, 0.15);
+}
+
+.player-quote p,
+.summary-info > p {
+  color: var(--b1);
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.875rem;
+  padding: 15px 80px 15px 20px;
+  box-sizing: border-box;
+}
+
+.summary-info > p {
+  padding: 30px 40px 0 0;
+  line-height: 2rem;
+}
+
+.summary-info > p strong {
+  font-weight: 800;
+}
+
+.player-info h1 {
+  background: var(--b1);
+  color: var(--w1);
+  font-size: 1.125rem;
+  font-weight: 600;
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+  margin: 0 auto;
+  max-width: fit-content;
+  padding: 20px 40px;
+  border-radius: 20px 20px 0 0;
+}
+
+.info-inner {
+  color: var(--w1);
+  background: var(--b2);
+  border-radius: 0 20px 20px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-shadow: 0px 1px 0px rgba(17, 17, 26, 0.1),
+    0px 8px 24px rgba(17, 17, 26, 0.1), 0px 16px 48px rgba(17, 17, 26, 0.1);
+}
+
+.info-inner > div,
+.info-inner > div:nth-child(2) div {
+  padding: 25px;
+  box-sizing: border-box;
+  background: var(--b1);
+  border-radius: 20px;
+}
+
+.info-inner > div:nth-child(2) {
+  background: unset;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+.info-inner > div:last-child {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.info-inner > div:last-child img {
+  width: 36px;
+  height: 36px;
+  transition: 0.2s ease;
+}
+
+.info-inner > div:last-child img:hover {
+  transform: scale(1.15);
+}
+
+.info-inner > div:last-child a {
+  width: 36px;
+  height: 36px;
+}
+
+.info-inner p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  margin-top: 2px;
+  font-size: 1.125rem;
+}
+
+.info-inner span {
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: #aaa;
+  font-weight: 800;
+  display: block;
+}
+
+.info-inner div:nth-child(2) div span:nth-child(3),
+.info-inner div:nth-child(3) span:nth-child(3) {
+  margin-top: 10px;
+}
+
+.info-inner div:nth-child(2) div {
+  width: 100%;
+}
+
+.info-inner div:nth-child(2) div:nth-child(1) {
+  max-width: fit-content;
+}
+
+.info-inner div:nth-child(3) a {
+  text-decoration: none;
+  color: var(--w1);
+}
+
+.player-experience h1 {
+  background: var(--b1);
+  font-size: 1.125rem;
+  font-weight: 600;
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+  margin: 0 auto;
+  max-width: fit-content;
+  padding: 20px 40px;
+  border-radius: 20px 20px 0 0;
+  color: var(--w1);
+}
+
+.experience-inner {
+  background: var(--b2);
+}
+
+.experience-inner > div,
+.education-inner > div {
+  margin: 0 auto;
+  max-width: 1140px;
+  padding: 40px 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.experience-card,
+.education-card {
+  color: var(--w1);
+  background: var(--b1);
+  padding: 40px 25px;
+  border-radius: 20px;
+}
+
+.experience-card h2,
+.experience-card h3,
+.education-card h2,
+.education-card h3 {
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
+  font-size: 1.75rem;
+}
+
+.experience-card h3,
+.education-card h3 {
+  font-size: 1.25rem;
+  color: #aaa;
+  margin-top: 4px;
+}
+
+.experience-card > span,
+.education-card > span {
+  display: block;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 10px 0 20px 0;
+}
+
+.experience-card p,
+.education-card p {
+  color: #aaa;
+  line-height: 2rem;
+}
+
+.experience-card div {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.experience-card div span {
+  background: linear-gradient(to bottom right, var(--b1), var(--b2));
+  padding: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 100px;
+  display: block;
+  max-width: fit-content;
+}
+
+.player-education {
+  padding: 120px 0 180px 0;
+  margin-bottom: -60px;
+  background: url(../img/webp/bg-paper.webp) center top / cover no-repeat;
+}
+
+.player-education img {
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto 20px auto;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.18);
+  max-width: fit-content;
+  width: 100%;
+  max-height: 160px;
+  object-fit: cover;
+}
+
+.education-inner {
+  background: linear-gradient(
+    180deg,
+    rgba(206, 206, 206, 0.3) 0%,
+    rgba(206, 206, 206, 0) 100%
+  );
+  box-shadow: 0px 48px 100px 0px rgba(17, 12, 46, 0.15);
+  padding: 0 20px;
+}
+
+.education-card {
+  background: linear-gradient(
+    180deg,
+    rgba(206, 206, 206, 0.25) 0%,
+    rgba(206, 206, 206, 0) 100%
+  );
+  box-shadow: 0px 0px 0px rgba(17, 17, 26, 0.1),
+    0px 0px 24px rgba(17, 17, 26, 0.1), 0px 0px 48px rgba(17, 17, 26, 0.1);
+  color: var(--b2);
+}
+
+.education-card h2,
+.education-card h3 {
+  font-weight: 800;
+}
+
+.education-card h3,
+.education-card p {
+  color: var(--b1);
+}
+
+.education-card p {
+  font-weight: 600;
+}
