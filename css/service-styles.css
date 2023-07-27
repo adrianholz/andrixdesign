@@ -356,7 +356,7 @@ main,
 }
 
 .faq-inner dd {
-  font-size: 1.125rm;
+  font-size: 1.125rem;
   line-height: 2rem;
   margin-left: 10px;
   color: #cecece;
@@ -460,6 +460,16 @@ main,
     background-position: center;
     background-size: 160px;
     text-align: center;
+  }
+  .description-inner div {
+    font-size: 1rem;
+    padding: 20px;
+  }
+  .services-page-slide p {
+    font-size: 1rem;
+  }
+  .faq-inner dd {
+    font-size: 1rem;
   }
 }
 

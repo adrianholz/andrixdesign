@@ -15,7 +15,7 @@ main .blur {
 .about-inner {
   max-width: 1040px;
   margin: 0 auto;
-  padding-top: 60px;
+  padding: 60px 20px 0 20px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
@@ -151,6 +151,8 @@ main .blur {
 .player-info {
   max-width: 460px;
   width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .player-quote {
@@ -332,6 +334,7 @@ main .blur {
   background: var(--b1);
   padding: 40px 25px;
   border-radius: 20px;
+  min-width: 300px;
 }
 
 .experience-card h2,
@@ -407,7 +410,6 @@ main .blur {
     rgba(206, 206, 206, 0) 100%
   );
   box-shadow: 0px 48px 100px 0px rgba(17, 12, 46, 0.15);
-  padding: 0 20px;
 }
 
 .education-card {
@@ -470,4 +472,183 @@ main .blur {
 
 .certificates-card h3 {
   color: #aaa;
+}
+
+@media (max-width: 1185px) {
+  .description-inner {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .player-info h1 {
+    order: 2;
+    border-radius: 0 0 20px 20px;
+  }
+  .player-info {
+    max-width: 700px;
+  }
+  .info-inner {
+    border-radius: 0 0 20px 20px;
+  }
+  .summary-info {
+    border-radius: 20px 20px 0 0;
+  }
+  .info-inner div:nth-child(2) div:nth-child(1) {
+    max-width: 100%;
+  }
+  .summary-info,
+  .info-inner {
+    max-height: unset;
+    padding: 20px;
+  }
+  .certificates-inner {
+    padding: 20px 0;
+  }
+
+  .experience-inner > div,
+  .education-inner > div {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    padding: 20px;
+  }
+  .experience-inner > div::-webkit-scrollbar,
+  .education-inner > div::-webkit-scrollbar {
+    height: 8px;
+  }
+
+  .experience-inner > div::-webkit-scrollbar-track,
+  .education-inner > div::-webkit-scrollbar-track {
+    background: #d3d3d3;
+  }
+
+  .experience-inner > div::-webkit-scrollbar-thumb,
+  .education-inner > div::-webkit-scrollbar-thumb {
+    background: #aaa;
+    border-radius: 15px;
+  }
+
+  .experience-inner > div::-webkit-scrollbar-thumb:hover,
+  .education-inner > div::-webkit-scrollbar-thumb:hover {
+    background: var(--b1);
+  }
+}
+
+@media (max-width: 1070px) {
+  .about-inner img {
+    max-width: 440px;
+  }
+  .player-intro h1 {
+    font-size: 4.5rem;
+    line-height: 4rem;
+  }
+  .player-intro h1 span {
+    font-size: 3.5rem;
+  }
+  .player-decoration {
+    font-size: 13rem;
+  }
+}
+
+@media (max-width: 870px) {
+  .about-inner {
+    position: relative;
+    grid-template-columns: 1fr;
+    padding-bottom: 60px;
+  }
+  .player-intro {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 400px;
+  }
+  .about-inner img {
+    display: none;
+  }
+  .player-calls {
+    justify-content: center;
+  }
+  .player-decoration {
+    font-size: 10rem;
+  }
+  .player-description {
+    padding: 60px 20px 120px 20px;
+  }
+}
+
+@media (max-width: 750px) {
+  .player-quote {
+    flex-direction: column;
+    align-items: center;
+    box-shadow: unset;
+  }
+  .player-quote img {
+    max-height: 230px;
+    max-width: 230px;
+    border-radius: 20px;
+    box-shadow: 0px 20px 25px rgba(0, 0, 0, 0.1),
+      0px 10px 10px rgba(0, 0, 0, 0.04);
+  }
+  .player-quote div {
+    border-radius: 20px;
+    box-shadow: 0px 20px 25px rgba(0, 0, 0, 0.1),
+      0px 10px 10px rgba(0, 0, 0, 0.04);
+    text-align: center;
+    margin-top: 30px;
+  }
+  .player-quote p {
+    padding: 20px;
+    font-size: 1rem;
+  }
+  .player-quote div span {
+    font-size: 1rem;
+  }
+  .summary-info > p {
+    font-size: 1rem;
+    padding: 30px 0 0 0;
+  }
+  .experience-card p,
+  .education-card p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .player-decoration {
+    font-size: 6rem;
+    top: 20%;
+  }
+}
+@media (max-width: 560px) {
+  .info-inner {
+    word-wrap: break-word;
+  }
+  .info-inner > div:nth-child(2) {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 440px) {
+  .player-intro h1 {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+  .player-intro h1 span {
+    font-size: 2.5rem;
+  }
+  .player-intro h2 {
+    font-size: 1rem;
+  }
+  .player-decoration {
+    font-size: 4rem;
+  }
+  .player-calls a {
+    font-size: 1rem;
+    padding: 12px 24px;
+    border-radius: 15px;
+  }
+  .player-calls {
+    gap: 20px;
+  }
 }

@@ -260,6 +260,36 @@ p {
   background: var(--b2);
 }
 
+.whatsapp {
+  position: fixed;
+  z-index: 10;
+  bottom: 20px;
+  right: 20px;
+  background: var(--b2);
+  padding: 6px 20px 6px 6px;
+  border-radius: 25px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  color: var(--w1);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: 0.2s ease;
+}
+
+.whatsapp img {
+  width: 36px;
+  height: 36px;
+  padding: 10px;
+  background: var(--b1);
+  border-radius: 20px;
+}
+
+.whatsapp:hover {
+  background: var(--w1);
+  color: var(--b2);
+}
+
 @keyframes scroll {
   from {
     transform: translateX(0);
