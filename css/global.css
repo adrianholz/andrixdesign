@@ -232,8 +232,48 @@ p {
   width: 100%;
 }
 
+.marquee {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  user-select: none;
+  gap: var(--gap);
+}
+
+.marquee-content {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: space-around;
+  gap: var(--gap);
+  min-width: 100%;
+}
+
+.marquee-hover:hover .marquee-content {
+  animation-play-state: paused !important;
+}
+
+.marquee-decorator {
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: 800;
+  color: var(--b1);
+  background: var(--b2);
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-100% - var(--gap)));
+  }
+}
+
 @media (prefers-reduced-motion) {
   .show-element {
     transition: none;
+  }
+  .marquee-content {
+    animation-play-state: paused !important;
   }
 }
