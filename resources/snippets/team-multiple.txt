@@ -1,0 +1,60 @@
+<section class="team" id="team">
+    <div class="team-heading">
+      <h1>Quem somos</h1>
+      <div>
+        <h2 class="scroll-animation-once leftside">Movidos pelo objetivo de <span>entregar o melhor</span></h2>
+        <!-- <div class="swiper-container-1">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"> -->
+        <div class="team-player">
+          <span class="player-decoration">Adrian</span>
+          <img src="img/png/image2.png" alt="Teste" class="scroll-animation-once leftside" loading="lazy">
+          <div class="player-info">
+            <h3 class="scroll-animation-once rightside">Adrian <span>Holzschuh</span></h3>
+            <div class="player-education scroll-animation-once rightside">
+              <h4>Tecnólogo em <span>Design Gráfico</span></h4>
+              <h4>Cursando <span>Análise e Des. de Sistemas</span></h4>
+              <h4>Técnico em <span>Des. de Sistemas</span></h4>
+            </div>
+            <a href="#" class="button scroll-animation-once rightside">Veja mais sobre mim</a>
+            <!-- </div>
+              </div>
+            </div> -->
+            <!-- <div class="swiper-slide">
+              <div class="team-player">
+                <span class="player-decoration">Andreas</span>
+                <img src="img/png/image2.png" alt="Teste">
+                <div class="player-info">
+                  <h3>Andreas <span>Holzschuh</span></h3>
+                  <div class="player-education">
+                    <h4>Tecnólogo em <span>Des. de Jogos Digitais</span></h4>
+                    <h4>Cursando <span>Data Analytics</span></h4>
+                    <h4>Técnico em <span>Des. de Sistemas</span></h4>
+                  </div>
+                  <a href="#" class="button scroll-animation-once rightside">Veja mais sobre mim</a>
+                </div>
+              </div>
+            </div> -->
+          </div>
+          <!-- <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-pagination"></div> -->
+        </div>
+        <div class="blur marketing active"></div>
+      </div>
+    </div>
+  </section>
+
+  const swiper1 = new Swiper('.swiper-container-1', {
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      pagination: {
+        el: '.swiper-pagination',
+      },
+      grabCursor: true,
+      loop: true,
+      rewind: true,
+      speed: 1000,
+    });

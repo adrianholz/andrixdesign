@@ -18,7 +18,7 @@ function toggleMobileMenu() {
 //Activating mobile submenus.
 function mobileSubmenu() {
   const submenuContainers = document.querySelectorAll(
-    ".header-services, .header-about, .header-projects",
+    ".header-services, .header-projects",
   );
   const submenu = document.querySelectorAll(".submenu");
   submenuContainers.forEach((item, index) => {

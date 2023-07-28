@@ -103,11 +103,7 @@
               <li><a href="#">Edição de Vídeo</a></li>
             </ul>
           </li>
-          <li class="scroll-animation leftside header-about"><a href="#">Sobre Nós</a>
-            <ul class="submenu">
-              <li><a href="#">Adrian Holzschuh</a></li>
-              <li><a href="#">Andreas Holzschuh</a></li>
-            </ul>
+          <li class="scroll-animation leftside header-about"><a href="about.html">Sobre Mim</a>
           </li>
           <li class="scroll-animation leftside header-projects"><a href="#">Projetos</a>
             <ul class="submenu">
@@ -128,7 +124,7 @@
     </div>
   </header>
 
-  <a href="#" class="whatsapp">
+  <a href="https://api.whatsapp.com/send?phone=5514998997707" target="_blank" class="whatsapp scroll-animation-once rightside">
     <img src="img/svg/whatsapp.svg" alt="Whatsapp">
     <span>Entre em Contato</span>
   </a>
@@ -471,42 +467,18 @@
       <h1>Quem somos</h1>
       <div>
         <h2 class="scroll-animation-once leftside">Movidos pelo objetivo de <span>entregar o melhor</span></h2>
-        <div class="swiper-container-1">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="team-player">
-                <span class="player-decoration">Adrian</span>
-                <img src="img/png/image2.png" alt="Teste" class="scroll-animation-once leftside" loading="lazy">
-                <div class="player-info">
-                  <h3 class="scroll-animation-once rightside">Adrian <span>Holzschuh</span></h3>
-                  <div class="player-education scroll-animation-once rightside">
-                    <h4>Tecnólogo em <span>Design Gráfico</span></h4>
-                    <h4>Cursando <span>Análise e Des. de Sistemas</span></h4>
-                    <h4>Técnico em <span>Des. de Sistemas</span></h4>
-                  </div>
-                  <a href="#" class="button scroll-animation-once rightside">Veja mais sobre mim</a>
-                </div>
-              </div>
+        <div class="team-player">
+          <span class="player-decoration">Adrian</span>
+          <img src="img/png/image2.png" alt="Teste" class="scroll-animation-once leftside" loading="lazy">
+          <div class="player-info">
+            <h3 class="scroll-animation-once rightside">Adrian <span>Holzschuh</span></h3>
+            <div class="player-education scroll-animation-once rightside">
+              <h4>Tecnólogo em <span>Design Gráfico</span></h4>
+              <h4>Cursando <span>Análise e Des. de Sistemas</span></h4>
+              <h4>Técnico em <span>Des. de Sistemas</span></h4>
             </div>
-            <div class="swiper-slide">
-              <div class="team-player">
-                <span class="player-decoration">Andreas</span>
-                <img src="img/png/image2.png" alt="Teste">
-                <div class="player-info">
-                  <h3>Andreas <span>Holzschuh</span></h3>
-                  <div class="player-education">
-                    <h4>Tecnólogo em <span>Des. de Jogos Digitais</span></h4>
-                    <h4>Cursando <span>Data Analytics</span></h4>
-                    <h4>Técnico em <span>Des. de Sistemas</span></h4>
-                  </div>
-                  <a href="#" class="button scroll-animation-once rightside">Veja mais sobre mim</a>
-                </div>
-              </div>
-            </div>
+            <a href="about.html" class="button scroll-animation-once rightside">Veja mais sobre mim</a>
           </div>
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
-          <div class="swiper-pagination"></div>
         </div>
         <div class="blur marketing active"></div>
       </div>
@@ -515,7 +487,7 @@
 
   <section class="projects" id="projects">
     <div class="services-heading projects-heading">
-      <h1>Portfólio Destaque</h1>
+      <h1>Portfólio</h1>
       <div>
         <h2 class="scroll-animation-once leftside">Trabalhos concluídos para <span>promover empresas</span></h2>
       </div>
@@ -619,7 +591,6 @@
         <div class="swiper-pagination"></div>
       </div>
     </div>
-    <!-- <div class="blur marketing active"></div> -->
     <a href="#" class="projects-call">Ver todos os nossos projetos</a>
   </section>
 
@@ -652,8 +623,8 @@
             <p class="scroll-animation-once leftside">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
           </div>
           <div class="courses-call">
-            <a href="resources/pdf/E-book - Tudo Sobre Photoshop.pdf" target="_blank" class="button scroll-animation-once leftside">Ler E-Book</a>
-            <a href="#" class="button scroll-animation-once leftside">Ver Cursos</a>
+            <a href="resources/pdf/E-book - Tudo Sobre Photoshop.pdf" target="_blank" class="button scroll-animation-once leftside">Ler E-book</a>
+            <a href="#" class="button scroll-animation-once leftside">Ver cursos</a>
           </div>
         </div>
         <img src="img/webp/ebook.webp" alt="Ebook Photoshop" class="scroll-animation-once rightside">
@@ -732,7 +703,7 @@
         <ul>
           <li class="scroll-animation-once leftside"><a href="#">Homepage</a></li>
           <li class="scroll-animation-once leftside"><a href="#">Serviços prestados</a></li>
-          <li class="scroll-animation-once leftside"><a href="#">Sobre nossa empresa</a></li>
+          <li class="scroll-animation-once leftside"><a href="#">Sobre mim</a></li>
           <li class="scroll-animation-once leftside"><a href="#">Projetos concluídos</a></li>
           <li class="scroll-animation-once leftside"><a href="#">Cursos e materiais</a></li>
         </ul>
@@ -772,19 +743,6 @@
     import { Pagination } from '/js/swiper/pagination.mjs';
     import { Autoplay } from '/js/swiper/autoplay.mjs';
     Swiper.use([Navigation, Pagination, Autoplay]);
-    const swiper1 = new Swiper('.swiper-container-1', {
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-      pagination: {
-        el: '.swiper-pagination',
-      },
-      grabCursor: true,
-      loop: true,
-      rewind: true,
-      speed: 1000,
-    });
     const swiper2 = new Swiper('.swiper-container-2', {
       pagination: {
         el: '.swiper-pagination',
