@@ -92,7 +92,7 @@ function alternateMain(index) {
   } else if (index == 3) {
     mainTitle[0].innerHTML = "Aqui começa o seu";
     mainTitle[1].innerHTML = alteredHeading[6];
-    mainTitle[2].innerHTML = alteredHeading[5];
+    mainTitle[2].innerHTML = alteredHeading[7];
     setTimeout(() => {
       blur.forEach((item) => {
         item.classList.add("design");
@@ -100,8 +100,8 @@ function alternateMain(index) {
     }, 1000);
   } else if (index == 4) {
     mainTitle[0].innerHTML = "Aqui começa a sua";
-    mainTitle[1].innerHTML = alteredHeading[7];
-    mainTitle[2].innerHTML = alteredHeading[8];
+    mainTitle[1].innerHTML = alteredHeading[8];
+    mainTitle[2].innerHTML = alteredHeading[9];
     setTimeout(() => {
       blur.forEach((item) => {
         item.classList.add("identity");
@@ -109,8 +109,8 @@ function alternateMain(index) {
     }, 1000);
   } else if (index == 5) {
     mainTitle[0].innerHTML = "Aqui começa o seu";
-    mainTitle[1].innerHTML = alteredHeading[9];
-    mainTitle[2].innerHTML = alteredHeading[10];
+    mainTitle[1].innerHTML = alteredHeading[10];
+    mainTitle[2].innerHTML = alteredHeading[11];
     setTimeout(() => {
       blur.forEach((item) => {
         item.classList.add("video");
@@ -135,6 +135,7 @@ const postCall = document.querySelectorAll(".post-call");
 const postContent = document.querySelectorAll(".post-content");
 const postContentInner = document.querySelectorAll(".post-content-inner");
 const postText = document.querySelectorAll(".post-preview p");
+const postMore = document.querySelectorAll(".post-content-inner p .more-link");
 
 let originalPostText = [];
 let newResponsiveText = [];
@@ -168,11 +169,24 @@ function activatePostResponsive() {
         item.removeChild(postCall[index]);
         postContent[index].appendChild(postCall[index]);
         postText[index].innerHTML = originalPostText[index];
+        postText.forEach((item) => {
+          item.innerText = item.innerText.slice(0, -8) + "...";
+        });
       }
     });
   }
 }
 
+function postReadMore() {
+  postMore.forEach((item) => {
+    item.innerHTML = "...";
+  });
+  postText.forEach((item) => {
+    item.innerText = item.innerText.slice(0, -4) + item.innerText.slice(-3);
+  });
+}
+
+postReadMore();
 activatePostResponsive();
 
 //Altering service presented at service section, and playing transition video in between.

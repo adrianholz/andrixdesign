@@ -124,6 +124,15 @@ main {
   animation-fill-mode: forwards;
 }
 
+.swiper-container-1 {
+  overflow: hidden;
+  position: absolute;
+  top: calc(100% - 165px);
+  z-index: 3;
+  width: 100%;
+  max-width: 100%;
+}
+
 .blog-post {
   background: var(--b2);
   color: var(--w1);
@@ -138,6 +147,7 @@ main {
 
 .blog-post h2 {
   font-size: 1.125rem;
+  line-height: 1.5rem;
   font-weight: 600;
   text-align: center;
   text-transform: uppercase;
@@ -168,6 +178,12 @@ main {
   box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px,
     rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px,
     rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+  object-fit: cover;
+}
+
+.post-content-inner p .more-link {
+  color: #aaa;
+  text-decoration: none;
 }
 
 .post-preview p {
@@ -333,6 +349,9 @@ main {
   }
   .post-call {
     gap: 15px;
+  }
+  .swiper-container-1 {
+    top: calc(100% - 230px);
   }
 }
 
@@ -651,36 +670,6 @@ main {
   display: block;
 }
 
-.service-window-inner.website {
-  background: var(--b1) url(../img/svg/website-dark.svg) no-repeat;
-  background-position: bottom -90px right -125px;
-}
-
-.service-window-inner.ecommerce {
-  background: var(--b1) url(../img/svg/ecommerce-dark.svg) no-repeat;
-  background-position: bottom -60px right -80px;
-}
-
-.service-window-inner.marketing {
-  background: var(--b1) url(../img/svg/marketing-dark.svg) no-repeat;
-  background-position: bottom -40px right -80px;
-}
-
-.service-window-inner.video {
-  background: var(--b1) url(../img/svg/video-dark.svg) no-repeat;
-  background-position: bottom -80px right -90px;
-}
-
-.service-window-inner.design {
-  background: var(--b1) url(../img/svg/art-dark.svg) no-repeat;
-  background-position: bottom -90px right -125px;
-}
-
-.service-window-inner.identity {
-  background: var(--b1) url(../img/svg/design-dark.svg) no-repeat;
-  background-position: bottom -70px right -100px;
-}
-
 .service-window-inner {
   position: relative;
   opacity: 0;
@@ -826,7 +815,8 @@ main {
   align-items: center;
   box-shadow: 0 48px 100px rgba(17, 12, 46, 0.1);
   max-width: 720px;
-  transition: 0.3s ease, 0.5;
+  transition-property: color, box-shadow, border-radius, transform, opacity;
+  transition-duration: 0.3s, 0.3s, 0.3s, 0.5s, 0.5s;
 }
 
 .preview-image {
@@ -1044,11 +1034,6 @@ main {
     gap: 20px;
     padding: 20px;
     background: var(--b2);
-  }
-  .service-window-inner.website {
-    background: var(--b1) url(../img/svg/website-dark.svg) no-repeat;
-    background-size: 440px 440px;
-    background-position: bottom -100px right -100px;
   }
   .service-window-inner.ecommerce {
     background-position: bottom -100px right -80px;
@@ -1627,6 +1612,7 @@ main {
   display: flex;
   flex-direction: column;
   gap: 30px;
+  color: var(--b2);
 }
 
 .project-title h3 {
@@ -1638,6 +1624,10 @@ main {
   font-weight: 600;
   max-width: 460px;
   line-height: 1.75em;
+}
+
+.project-typography p {
+  font-weight: 500;
 }
 
 .project-typography > span,

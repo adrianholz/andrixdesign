@@ -160,7 +160,7 @@ header {
   opacity: 1;
 }
 
-@media (max-width: 1020px) {
+@media (max-width: 1040px) {
   .header-inner img {
     margin: unset;
   }

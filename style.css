@@ -1,0 +1,37 @@
+/*
+Theme Name: Andrix Design
+Theme URI: https://andrix.design/
+Author: Adrian Holzschuh
+Author URI: https://adrianholzschuh.com/
+Description: Theme for Andrix's company website.
+Version: 1.0
+*/
+
+@import url("css/global.css");
+@import url("css/swiper/swiper.min.css");
+@import url("css/swiper/navigation.min.css");
+@import url("css/swiper/pagination.min.css");
+@import url("css/intro.css");
+@import url("css/header.css");
+@import url("css/contact.css");
+@import url("css/footer.css");
+
+:root {
+  --w1: #fff;
+  --b1: #232323;
+  --b2: #161616;
+  --d1: #0056ff;
+  --d2: #b415ff;
+}
+
+@property --bl1 {
+  syntax: "<color>";
+  initial-value: #232323;
+  inherits: false;
+}
+
+@property --bl2 {
+  syntax: "<color>";
+  initial-value: #161616;
+  inherits: false;
+}

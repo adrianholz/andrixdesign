@@ -108,8 +108,11 @@ function tooltip() {
     const box = document.createElement("div");
     const text = document.createElement("p");
     text.innerHTML = item.dataset.value;
+    if (item.dataset.background) {
+      box.style.background = item.dataset.background;
+    }
     if (item.dataset.color) {
-      box.style.background = item.dataset.color;
+      box.style.color = item.dataset.color;
     }
     box.classList.add("tooltip");
     box.appendChild(text);

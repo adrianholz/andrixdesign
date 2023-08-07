@@ -104,6 +104,14 @@
 }
 
 @font-face {
+  font-family: "Lora";
+  src: url("../resources/fonts/subset-Lora-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
   font-family: "Livvic";
   src: url("../resources/fonts/subset-Livvic-Regular.woff2") format("woff2");
   font-weight: normal;
@@ -135,9 +143,63 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: "Ibarra Real Nova";
+  src: url("../resources/fonts/subset-IbarraRealNova-Medium.woff2")
+    format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Ibarra Real Nova";
+  src: url("../resources/fonts/subset-IbarraRealNova-Bold.woff2")
+    format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Outfit";
+  src: url("../resources/fonts/subset-Outfit-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Outfit";
+  src: url("../resources/fonts/subset-Outfit-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto Slab";
+  src: url("../resources/fonts/subset-RobotoSlab-Bold.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto Slab";
+  src: url("../resources/fonts/subset-RobotoSlab-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+html,
 body {
-  font: 500 18px Raleway, sans-serif;
   overflow-x: hidden;
+}
+body {
+  position: relative;
+  font: 500 18px Raleway, sans-serif;
 }
 
 body,

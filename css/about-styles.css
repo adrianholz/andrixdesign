@@ -249,8 +249,9 @@ main .blur {
 
 .info-inner > div:last-child {
   display: flex;
-  gap: 20px;
+  gap: 18px;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .info-inner > div:last-child img {
@@ -322,11 +323,39 @@ main .blur {
 .experience-inner > div,
 .education-inner > div {
   margin: 0 auto;
-  max-width: 1140px;
+  max-width: fit-content;
   padding: 40px 20px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
   gap: 40px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+.experience-inner > div::-webkit-scrollbar,
+.education-inner > div::-webkit-scrollbar {
+  height: 8px;
+}
+
+.experience-inner > div::-webkit-scrollbar-track {
+  background: var(--b1);
+}
+
+.education-inner > div::-webkit-scrollbar-track {
+  background: #cecece;
+}
+
+.experience-inner > div::-webkit-scrollbar-thumb,
+.education-inner > div::-webkit-scrollbar-thumb {
+  background: #aaa;
+  border-radius: 15px;
+}
+
+.experience-inner > div::-webkit-scrollbar-thumb:hover {
+  background: #cecece;
+}
+
+.education-inner > div::-webkit-scrollbar-thumb:hover {
+  background: var(--b1);
 }
 
 .experience-card,
@@ -336,6 +365,7 @@ main .blur {
   padding: 40px 25px;
   border-radius: 20px;
   min-width: 300px;
+  max-width: 300px;
 }
 
 .experience-card h2,
@@ -402,6 +432,13 @@ main .blur {
   width: 100%;
   max-height: 160px;
   object-fit: cover;
+  filter: saturate(0%);
+  transition-property: filter, tranform, opacity;
+  transition-duration: 0.2s, 0.5s, 0.5s;
+}
+
+.player-education img:hover {
+  filter: saturate(100%);
 }
 
 .education-inner {
@@ -420,7 +457,7 @@ main .blur {
     rgba(206, 206, 206, 0) 100%
   );
   box-shadow: 0px 0px 0px rgba(17, 17, 26, 0.1),
-    0px 0px 24px rgba(17, 17, 26, 0.1), 0px 0px 48px rgba(17, 17, 26, 0.1);
+    0px 0px 12px rgba(17, 17, 26, 0.1), 0px 0px 24px rgba(17, 17, 26, 0.1);
   color: var(--b2);
 }
 
@@ -505,35 +542,10 @@ main .blur {
   .certificates-inner {
     padding: 20px 0;
   }
-
   .experience-inner > div,
   .education-inner > div {
-    display: flex;
-    gap: 20px;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    -ms-overflow-style: -ms-autohiding-scrollbar;
     padding: 20px;
-  }
-  .experience-inner > div::-webkit-scrollbar,
-  .education-inner > div::-webkit-scrollbar {
-    height: 8px;
-  }
-
-  .experience-inner > div::-webkit-scrollbar-track,
-  .education-inner > div::-webkit-scrollbar-track {
-    background: #d3d3d3;
-  }
-
-  .experience-inner > div::-webkit-scrollbar-thumb,
-  .education-inner > div::-webkit-scrollbar-thumb {
-    background: #aaa;
-    border-radius: 15px;
-  }
-
-  .experience-inner > div::-webkit-scrollbar-thumb:hover,
-  .education-inner > div::-webkit-scrollbar-thumb:hover {
-    background: var(--b1);
+    gap: 20px;
   }
 }
 
