@@ -152,11 +152,13 @@
 .contact-form .button {
   background: var(--b2);
   font-weight: 500;
+  font-size: 1.125rem;
+  border: none;
   color: var(--w1);
   padding: 18px 36px;
   font-family: "Poppins", sans-serif;
   border-radius: 20px;
-  max-width: fit-content;
+  display: block;
   margin: 20px 0 0 auto;
   cursor: pointer;
   transition-property: background, color, transform, opacity;
