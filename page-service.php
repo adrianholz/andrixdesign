@@ -10,8 +10,8 @@
   <title><?php wp_title($sep = ''); ?> | Andrix Design</title>
   <meta name="author" content="Adrian Holzschuh">
   <meta name="description" content="<?php the_field("meta-description"); ?>">
-  <link rel="stylesheet" href="<?= get_stylesheet_directory_uri() ?>/style.css">
-  <link rel="stylesheet" href="<?= get_stylesheet_directory_uri() ?>/css/service-styles.css">
+  <link rel="stylesheet" href="<?= get_stylesheet_directory_uri() ?>/style.min.css">
+  <link rel="stylesheet" href="<?= get_stylesheet_directory_uri() ?>/css/service-styles.min.css">
   <link rel="apple-touch-icon" sizes="57x57" href="<?= get_stylesheet_directory_uri() ?>/img/favicon/apple-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="<?= get_stylesheet_directory_uri() ?>/img/favicon/apple-icon-60x60.png">
   <link rel="apple-touch-icon" sizes="72x72" href="<?= get_stylesheet_directory_uri() ?>/img/favicon/apple-icon-72x72.png">
